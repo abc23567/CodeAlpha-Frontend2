@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modern Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>My Image Gallery</h1>
+
+<div class="gallery">
+  <img src="https://picsum.photos/500?1" onclick="openImg(0)">
+  <img src="https://picsum.photos/500?2" onclick="openImg(1)">
+  <img src="https://picsum.photos/500?3" onclick="openImg(2)">
+  <img src="https://picsum.photos/500?4" onclick="openImg(3)">
+  <img src="https://picsum.photos/500?5" onclick="openImg(4)">
+  <img src="https://picsum.photos/500?6" onclick="openImg(5)">
+</div>
+
+<div id="popup">
+  <button class="close" onclick="closeImg()">✖</button>
+  <button class="prev" onclick="changeImg(-1)">❮</button>
+  <img id="popupImg">
+  <button class="next" onclick="changeImg(1)">❯</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
